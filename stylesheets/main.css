@@ -1,6 +1,18 @@
+* {
+  margin: 0; }
+
+/* ---------- COLORS ---------- */
 body {
   background-color: #ffcc99; }
 
+#sub-pastries,
+#sub-cookies {
+  background-color: #ff99cc; }
+
+#sub-cakes {
+  background-color: #ffcccc; }
+
+/* ---------- LINKS ---------- */
 a:link {
   color: #660000;
   text-decoration: none; }
@@ -14,6 +26,7 @@ a:hover {
 a:active {
   color: #ffffff; }
 
+/* ---------- NAVIGATION ---------- */
 nav {
   position: fixed;
   top: 0px;
@@ -39,16 +52,124 @@ nav {
       nav li {
         font-size: 1.5em; } }
 
+/* ---------- HEADINGS ---------- */
+h1 {
+  padding: 10px;
+  display: inline-block; }
+
+.main h1 {
+  font-size: 3em; }
+
+.sub h1 {
+  font-size: 3em; }
+
+/* ---------- HEIGHTS ---------- */
 #page-home {
   height: 500px; }
 
 #page-bakery {
-  height: 500px; }
+  height: 920px; }
+  @media (min-width: 640px) {
+    #page-bakery {
+      height: 600px; } }
 
 #page-cafe {
   height: 500px; }
 
 #page-contact {
   height: 700px; }
+
+.sub {
+  height: 500px; }
+
+/* ---------- IMAGES ---------- */
+#img-pastries,
+#img-cakes,
+#img-cookies {
+  display: block;
+  padding: 0px 0px 30px 0px; }
+  @media (min-width: 640px) {
+    #img-pastries,
+    #img-cakes,
+    #img-cookies {
+      display: inline-block;
+      padding: 0px 15px 0px 15px; } }
+
+.images {
+  text-align: center;
+  margin-top: 50px; }
+
+/* ---------- PAGE INFO ---------- */
+#info-bakery {
+  text-align: center; }
+
+.curly-left {
+  display: inline-block;
+  font-size: 7em; }
+  @media (min-width: 420px) {
+    .curly-left {
+      font-size: 6em; } }
+
+#bakery {
+  display: inline-block;
+  width: 250px;
+  text-align: justify;
+  line-height: 100%;
+  font-weight: 200; }
+  @media (min-width: 420px) {
+    #bakery {
+      width: 300px; } }
+
+.curly-right {
+  display: inline-block;
+  font-size: 7em; }
+  @media (min-width: 420px) {
+    .curly-right {
+      font-size: 6em; } }
+
+/* sub page info text
+div#info-pastries > p,
+div#info-cakes > p,
+div#info-cookies > p {
+  font-weight: 200;
+  line-height: 100%;
+  float: left;
+  width: 300px;
+}
+
+.curly, #cakes{
+  vertical-align: middle;
+}
+
+/* sub page info {}
+#info-pastries .curly p,
+#info-cakes .curly p,
+#info-cookies .curly p {
+  float: left;
+  padding: 0px;
+  font-size: 6em;
+  width: auto;
+}*/
+/* bakery and cafe page info text
+div#info-bakery > p,
+div#info-cafe > p {
+  font-weight: 200;
+  line-height: 100%;
+  float: right;
+  width: 300px;
+
+  @media (max-width: 600px) {
+    float: clear;
+    margin-top: 100px;
+  }
+} */
+/* bakery and cafe info {}
+#info-bakery .curly p,
+#info-cafe .curly p {
+  float: right;
+  padding: 0px;
+  font-size: 6em;
+  width: auto;
+}*/
 
 /*# sourceMappingURL=main.css.map */
