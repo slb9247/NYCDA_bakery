@@ -137,7 +137,11 @@ h1 {
 }
 
 /* ---------- PAGE INFO ---------- */
-#info-bakery {
+#info-bakery,
+#info-pastries,
+#info-cakes,
+#info-cookies,
+#info-cafe { // info blocks
   text-align: center;
 }
 
@@ -150,7 +154,11 @@ h1 {
   }
 }
 
-#bakery {
+#bakery,
+#pastries,
+#cakes,
+#cookies,
+#cafe { // info text
   display: inline-block;
   width: 250px;
   text-align: justify;

@@ -100,7 +100,11 @@ h1 {
   margin-top: 50px; }
 
 /* ---------- PAGE INFO ---------- */
-#info-bakery {
+#info-bakery,
+#info-pastries,
+#info-cakes,
+#info-cookies,
+#info-cafe {
   text-align: center; }
 
 .curly-left {
@@ -110,14 +114,22 @@ h1 {
     .curly-left {
       font-size: 6em; } }
 
-#bakery {
+#bakery,
+#pastries,
+#cakes,
+#cookies,
+#cafe {
   display: inline-block;
   width: 250px;
   text-align: justify;
   line-height: 100%;
   font-weight: 200; }
   @media (min-width: 420px) {
-    #bakery {
+    #bakery,
+    #pastries,
+    #cakes,
+    #cookies,
+    #cafe {
       width: 300px; } }
 
 .curly-right {
