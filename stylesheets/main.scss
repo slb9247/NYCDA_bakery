@@ -7,10 +7,19 @@
 
 *{
   margin: 0;
+  padding: 0;
 }
 
-/* ---------- COLORS ---------- */
-body {
+/* ---------- BACKGROUNDS ---------- */
+#page-home {
+  background: url('../images/baking.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#page-bakery,
+#page-cafe,
+#page-contact {
   background-color: #ffcc99;
 }
 
@@ -56,7 +65,6 @@ nav {
 
   ul {
     text-align: center;
-    padding: 0px;
 
     @media (min-width: 480px) {
       text-align: right;
@@ -92,17 +100,13 @@ h1 {
   font-size: 3em;
 }
 
-/* ---------- HEIGHTS ---------- */
+/* ---------- PAGE HEIGHTS ---------- */
 #page-home {
-  height: 500px;
+  height: 600px;
 }
 
 #page-bakery {
-  height: 920px;
-
-  @media (min-width: 640px) {
-    height: 600px;
-  }
+  height: 850px;
 }
 
 #page-cafe {
@@ -118,11 +122,46 @@ h1 {
 }
 
 /* ---------- IMAGES ---------- */
-#img-pastries,
+.images-bakery {
+  margin-top: 50px;
+}
+
+#img-pastries {
+  background: url('../images/crop_pastries.jpg');
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+#img-cakes {
+  background: url('../images/crop_cake.jpg');
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+#img-cookies {
+  background: url('../images/crop_cookies.jpg');
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+
+/*#img-pastries,
 #img-cakes,
 #img-cookies {
   display: block;
-  padding: 0px 0px 30px 0px;
+  padding-bottom: 30px;
 
 
   @media (min-width: 640px) {
@@ -134,7 +173,7 @@ h1 {
 .images {
   text-align: center;
   margin-top: 50px;
-}
+}*/
 
 /* ---------- PAGE INFO ---------- */
 #info-bakery,
@@ -143,6 +182,7 @@ h1 {
 #info-cookies,
 #info-cafe { // info blocks
   text-align: center;
+  margin-top: -15px;
 }
 
 .curly-left {
@@ -178,49 +218,40 @@ h1 {
     font-size: 6em;
   }
 }
-/* sub page info text
-div#info-pastries > p,
-div#info-cakes > p,
-div#info-cookies > p {
-  font-weight: 200;
-  line-height: 100%;
+
+/* ---------- HOME CONTENT ---------- */
+
+
+
+
+/* ---------- PASTRY CONTENT ---------- */
+#list-pastries {
+  font-weight: 400;
+  list-style-type: none;
   float: left;
-  width: 300px;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 
-.curly, #cakes{
-  vertical-align: middle;
+
+#flavors-cannolo,
+#flavors-puff,
+#flavors-eclair,
+#flavors-whoopie {
+  display: none; // don't show until link is clicked
+  font-weight: 400;
+  list-style-type: none;
+  float: right;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 50px;
 }
 
-/* sub page info {}
-#info-pastries .curly p,
-#info-cakes .curly p,
-#info-cookies .curly p {
+/* ---------- COOKIE CONTENT ---------- */
+#flavors-cookies {
+  font-weight: 400;
+  list-style-type: none;
   float: left;
-  padding: 0px;
-  font-size: 6em;
-  width: auto;
-}*/
-
-/* bakery and cafe page info text
-div#info-bakery > p,
-div#info-cafe > p {
-  font-weight: 200;
-  line-height: 100%;
-  float: right;
-  width: 300px;
-
-  @media (max-width: 600px) {
-    float: clear;
-    margin-top: 100px;
-  }
-} */
-
-/* bakery and cafe info {}
-#info-bakery .curly p,
-#info-cafe .curly p {
-  float: right;
-  padding: 0px;
-  font-size: 6em;
-  width: auto;
-}*/
+  margin-left: 30px;
+  margin-top: 20px;
+}
