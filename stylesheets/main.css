@@ -46,7 +46,8 @@ nav {
   background-color: #cc9966;
   width: 100%;
   height: 100px;
-  box-shadow: 2px 6px 15px #333333; }
+  box-shadow: 2px 6px 15px #333333;
+  z-index: 1000; }
   nav ul {
     text-align: center; }
     @media (min-width: 480px) {
@@ -103,7 +104,7 @@ h1 {
   height: 500px; }
 
 #page-contact {
-  height: 700px; }
+  height: 500px; }
 
 /* ---------- BAKERY PAGE IMAGES ---------- */
 .images-bakery {
@@ -142,33 +143,47 @@ h1 {
 #img-eclair,
 #img-whoopie {
   display: block;
-  padding-bottom: 30px; }
+  margin-bottom: 30px;
+  position: relative; }
   @media (min-width: 560px) {
     #img-cannoli,
     #img-puff,
     #img-eclair,
     #img-whoopie {
       display: inline-block;
-      padding: 0px 15px 15px 15px; } }
+      margin: 0px 15px 15px 15px; } }
 
 .images-pastries {
   text-align: center;
   margin-top: 50px; }
 
+#img-cannoli img:hover,
+#img-puff img:hover,
+#img-eclair img:hover,
+#img-whoopie img:hover {
+  transform: scale3d(1.05, 1.05, 1);
+  opacity: 0.3; }
+
 /* ---------- CAKE AND PIE PAGE IMAGES ---------- */
 #img-cake,
 #img-pie {
   display: block;
-  padding-bottom: 30px; }
+  margin-bottom: 30px;
+  position: relative; }
   @media (min-width: 560px) {
     #img-cake,
     #img-pie {
       display: inline-block;
-      padding: 0px 15px 15px 15px; } }
+      margin: 0px 15px 15px 15px; } }
 
 .images-cakesPies {
   text-align: center;
   margin-top: 50px; }
+
+#img-cake img:hover,
+#img-pie img:hover {
+  transform: scale3d(1.05, 1.05, 1);
+  opacity: 0.3; }
 
 /* ---------- PAGE INFO BLOCKS---------- */
 #info-bakery,
@@ -219,7 +234,7 @@ h1 {
   margin-left: 30px;
   margin-top: 50px; }
 
-#flavors-cannolo,
+#flavors-cannoli,
 #flavors-puff,
 #flavors-eclair,
 #flavors-whoopie {
@@ -230,6 +245,17 @@ h1 {
   text-align: right;
   margin-right: 30px;
   margin-top: 50px; }
+
+.hover-text {
+  opacity: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  z-index: 100; }
 
 /* ---------- CAKE PAGE CONTENT ---------- */
 /* ---------- COOKIE PAGE CONTENT ---------- */

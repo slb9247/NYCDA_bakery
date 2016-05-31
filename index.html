@@ -8,6 +8,7 @@
         <script src="https://use.typekit.net/gfb3hsj.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -46,17 +47,23 @@
         </div>
 
         <div class="images-bakery">
-          <div id="img-pastries">
-            <!-- BACKGROUND IMAGE -->
-          </div>
+          <a href="#">
+            <div id="img-pastries">
+              <!-- BACKGROUND IMAGE -->
+            </div>
+          </a>
 
-          <div id="img-bigCake">
-            <!-- BACKGROUND IMAGE -->
-          </div>
+          <a href="#">
+            <div id="img-bigCake">
+              <!-- BACKGROUND IMAGE -->
+            </div>
+          </a>
 
-          <div id="img-cookies">
-            <!-- BACKGROUND IMAGE -->
-          </div>
+          <a href="#">
+            <div id="img-cookies">
+              <!-- BACKGROUND IMAGE -->
+            </div>
+          </a>
         </div>
       </section>
 
@@ -80,30 +87,28 @@
 
         <div class="images-pastries">
           <div id="img-cannoli">
-            <img src="images/cannoli.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-cannoli">Cannoli</p>
+            <a href="#sub-pastries"><img src="images/cannoli.jpg" width="175" height="175"></a>
           </div>
 
           <div id="img-puff">
-            <img src="images/cream_puff.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-puff">Cream Puffs</p>
+            <a href="#sub-pastries"><img src="images/cream_puff.jpg" width="175" height="175"></a>
           </div>
 
           <div id="img-eclair">
-            <img src="images/eclair.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-eclair">Eclairs</p>
+            <a href="#sub-pastries"><img src="images/eclair.jpg" width="175" height="175"></a>
           </div>
 
           <div id="img-whoopie">
-            <img src="images/whoopie_pie.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-whoopie">Whoopie Pies</p>
+            <a href="#sub-pastries"><img src="images/whoopie_pie.jpg" width="175" height="175"></a>
           </div>
         </div>
-        <!--<ul id="list-pastries">
-          <li>Cannoli</li>
-          <li>Cream Puffs</li>
-          <li>Eclairs</li>
-          <li>Whoopie Pies</li>
-        </ul>-->
 
-      <!-- cannolo flavors -->
-        <ul id="flavors-cannolo">
+      <!-- cannoli flavors -->
+        <ul id="flavors-cannoli">
           <li>Plain Ricotta</li>
           <li>Chocolate Ricotta</li>
           <li>Yellow Cream</li>
@@ -169,11 +174,13 @@
 
         <div class="images-cakesPies">
           <div id="img-cake">
-            <img src="images/cake.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-cake">Cakes</p>
+            <a href="#"><img src="images/cake.jpg" width="175" height="175"></a>
           </div>
 
           <div id="img-pie">
-            <img src="images/pie.jpg" width="175" height="175">
+            <p class="hover-text" id="hover-pie">Pies</p>
+            <a href="#"><img src="images/pie.jpg" width="175" height="175"></a>
           </div>
         </div>
       </section>
