@@ -16,21 +16,14 @@ $(document).on('ready', function() {
   });
 
 
+
 // show and hide text on hovered and non-hovered images
-  // $('#img-cannoli').on('mouseenter', function() {
-  //   $('#hover-cannoli').fadeTo(500, 1.0);
-  // });
-  // $('#img-cannoli').on('mouseleave', function() {
-  //   $('#hover-cannoli').hide();
-  // });
-
-  $('.image').on('mouseenter', function() {
-    $(this).find('.hover-text').fadeTo(500, 1.0);
+  $('img').on('mouseenter', function() {
+    $(this).css({cursor: 'pointer'}).siblings('.hover-text').fadeTo(500, 1.0);
   });
-  $('.image').on('mouseleave', function() {
-    $(this).find('.hover-text').hide();
+  $('img').on('mouseleave', function() {
+    $(this).siblings('.hover-text').hide();
   });
-
 
 
 
@@ -39,39 +32,57 @@ $(document).on('ready', function() {
     $('#img-puff, #img-eclair, #img-whoopie').hide();
   //  $('#show').css('display', 'inline-block');
     $('#flavors-cannoli').fadeIn(2000);
+    $('#sub-pastries').css('height', '750px');
     $('#button-pastries').show();
   });
 
   $('#img-puff').on('click', function() {
     $('#img-cannoli, #img-eclair, #img-whoopie').hide();
     $('#flavors-puff').fadeIn(2000);
+    $('#sub-pastries').css('height', '750px');
     $('#button-pastries').show();
   });
 
   $('#img-eclair').on('click', function() {
     $('#img-cannoli, #img-puff, #img-whoopie').hide();
     $('#flavors-eclair').fadeIn(2000);
+    $('#sub-pastries').css('height', '750px');
     $('#button-pastries').show();
   });
 
   $('#img-whoopie').on('click', function() {
     $('#img-cannoli, #img-puff, #img-eclair').hide();
     $('#flavors-whoopie').fadeIn(2000);
+    $('#sub-pastries').css('height', '750px');
     $('#button-pastries').show();
   });
 
-
   $('#img-cake').on('click', function() {
     $('#img-pie').hide();
-    //fade in flavors
+    $('#flavors-cakes').fadeIn(2000);
+    $('#sub-cakesPies').css('height', '700px');
     $('#button-cakesPies').show();
   });
 
   $('#img-pie').on('click', function() {
     $('#img-cake').hide()
-    //fade in flavors
+    $('#flavors-pies').fadeIn(2000);
+    $('#sub-cakesPies').css('height', '700px');
     $('#button-cakesPies').show();
   });
+
+// back button click events
+  // $('#button-pastries').on('click', function() {
+  //   $('.flavors').hide();
+  //   $('#img-cannoli, #img-puff, #img-eclair, #img-whoopie').show();
+  //   $('#sub-pastries').css('height', '1100px');
+  //   $('#button-pastries').hide();
+  // });
+
+  // $('#button-cakesPies').on('click', function() {
+  //   $('#flavors-cakes, #flavors-pies, #button-cakesPies').hide();
+  //   $('#img-cake, #img-pie').show();
+  // });
 
 
 }); // ends doc.ready
