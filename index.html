@@ -37,7 +37,7 @@
             <p>{</p>
           </div>
 
-          <p id="bakery">
+          <p id="text-bakery">
             Everything is made fresh on the premises, and we mean everything! Fresh fruit, butter, eggs, sugars, and even all of our signature flavorings!
           </p>
 
@@ -46,20 +46,20 @@
           </div>
         </div>
 
-        <div class="images-bakery">
-          <a href="#">
+        <div class="content-bakery">
+          <a href="#sub-pastries">
             <div id="img-pastries">
               <!-- BACKGROUND IMAGE -->
             </div>
           </a>
 
-          <a href="#">
+          <a href="#sub-cakesPies">
             <div id="img-bigCake">
               <!-- BACKGROUND IMAGE -->
             </div>
           </a>
 
-          <a href="#">
+          <a href="#sub-cookies">
             <div id="img-cookies">
               <!-- BACKGROUND IMAGE -->
             </div>
@@ -76,7 +76,7 @@
             <p>{</p>
           </div>
 
-          <p id="pastries">
+          <p id="text-pastries">
             Our pastries are the finest and freshest around! Everything is handmade and baked with love, and it’s all waiting to be enjoyed by you!
           </p>
 
@@ -85,73 +85,71 @@
           </div>
         </div>
 
-        <div class="images-pastries">
-          <div id="img-cannoli">
+        <div class="content-pastries">
+          <div id="img-cannoli" class="image">
             <p class="hover-text" id="hover-cannoli">Cannoli</p>
             <a href="#sub-pastries"><img src="images/cannoli.jpg" width="175" height="175"></a>
           </div>
 
-          <div id="img-puff">
+            <ul id="flavors-cannoli" class="flavors">
+              <li>Plain Ricotta</li>
+              <li>Chocolate Ricotta</li>
+              <li>Yellow Cream</li>
+              <li>Chocolate Cream</li>
+              <li>Chocolate Mousse</li>
+              <li>Chocolate Chip</li>
+              <li>Hazelnut</li>
+              <li>Caramel</li>
+            </ul>
+
+          <div id="img-puff" class="image">
             <p class="hover-text" id="hover-puff">Cream Puffs</p>
             <a href="#sub-pastries"><img src="images/cream_puff.jpg" width="175" height="175"></a>
           </div>
 
-          <div id="img-eclair">
+            <ul id="flavors-puff" class="flavors">
+              <li>Vanilla</li>
+              <li>Chocolate</li>
+              <li>Coffee</li>
+              <li>Pumpkin</li>
+              <li>Strawberry</li>
+            </ul>
+
+          <div id="img-eclair" class="image">
             <p class="hover-text" id="hover-eclair">Eclairs</p>
             <a href="#sub-pastries"><img src="images/eclair.jpg" width="175" height="175"></a>
           </div>
 
-          <div id="img-whoopie">
+            <ul id="flavors-eclair" class="flavors">
+              <li>Vanilla</li>
+              <li>Chocolate</li>
+              <li>Chocolate Cherry</li>
+              <li>Caramel</li>
+              <li>Tiramisu</li>
+              <li>Cappuccino</li>
+              <li>Strawberry Cheesecake</li>
+            </ul>
+
+          <div id="img-whoopie" class="image">
             <p class="hover-text" id="hover-whoopie">Whoopie Pies</p>
             <a href="#sub-pastries"><img src="images/whoopie_pie.jpg" width="175" height="175"></a>
           </div>
-        </div>
 
-      <!-- cannoli flavors -->
-        <ul id="flavors-cannoli">
-          <li>Plain Ricotta</li>
-          <li>Chocolate Ricotta</li>
-          <li>Yellow Cream</li>
-          <li>Chocolate Cream</li>
-          <li>Chocolate Mousse</li>
-          <li>Chocolate Chip</li>
-          <li>Hazelnut</li>
-          <li>Caramel</li>
-          <li>Strawberry</li>
-          <li>Peanut Butter</li>
-        </ul>
+            <ul id="flavors-whoopie" class="flavors">
+              <li>Vanilla</li>
+              <li>Chocolate</li>
+              <li>Chocolate Chip</li>
+              <li>Pumpkin</li>
+              <li>Banana</li>
+              <li>Red Velvet</li>
+              <li>Blueberry</li>
+            </ul>
+        </div> <!-- end content-pastries -->
 
-      <!-- cream puff flavors -->
-        <ul id="flavors-puff">
-          <li>Vanilla</li>
-          <li>Chocolate</li>
-          <li>Coffee</li>
-          <li>Pumpkin</li>
-          <li>Strawberry</li>
-        </ul>
 
-      <!-- eclair flavors -->
-        <ul id="flavors-eclair">
-          <li>Vanilla</li>
-          <li>Chocolate</li>
-          <li>Chocolate Cherry</li>
-          <li>Caramel</li>
-          <li>Tiramisu</li>
-          <li>Cappuccino</li>
-          <li>Strawberry Cheesecake</li>
-        </ul>
-
-      <!-- whoopie pie flavors -->
-        <ul id="flavors-whoopie">
-          <li>Vanilla</li>
-          <li>Chocolate</li>
-          <li>Chocolate Chip</li>
-          <li>Pumpkin</li>
-          <li>Banana</li>
-          <li>Red Velvet</li>
-          <li>Blueberry</li>
-        </ul>
-
+        <div class="button-back" id="button-pastries">
+          <button onClick="document.location.reload(true)">Back</button>
+        <div>
       </section>
 
 <!-- cake and pie page -->
@@ -163,7 +161,7 @@
             <p>{</p>
           </div>
 
-          <p id="cakesPies">
+          <p id="text-cakesPies">
             Our cakes and pies are made of only the finest ingredients around, and our crusts are rich, flaky and baked golden brown every time!
           </p>
 
@@ -172,17 +170,22 @@
           </div>
         </div>
 
-        <div class="images-cakesPies">
-          <div id="img-cake">
+        <div class="content-cakesPies">
+          <div id="img-cake" class="image">
             <p class="hover-text" id="hover-cake">Cakes</p>
-            <a href="#"><img src="images/cake.jpg" width="175" height="175"></a>
+            <a href="#sub-cakesPies"><img src="images/cake.jpg" width="175" height="175"></a>
           </div>
 
-          <div id="img-pie">
+          <div id="img-pie" class="image">
             <p class="hover-text" id="hover-pie">Pies</p>
-            <a href="#"><img src="images/pie.jpg" width="175" height="175"></a>
+            <a href="#sub-cakesPies"><img src="images/pie.jpg" width="175" height="175"></a>
           </div>
-        </div>
+        </div> <!-- end content-cakesPies -->
+
+
+        <div class="button-back" id="button-cakesPies">
+          <button onClick="document.location.reload(true)">Back</button>
+        <div>
       </section>
 
 <!-- cookie page -->
@@ -194,7 +197,7 @@
             <p>{</p>
           </div>
 
-          <p id="cookies">
+          <p id="text-cookies">
             Our cookies are always baked to perfection by our hard-working, cookie-loving bakers. We welcome you to come and taste for yourself!
           </p>
 
@@ -225,7 +228,7 @@
             <p>{</p>
           </div>
 
-          <p id="cafe">
+          <p id="text-cafe">
             Here, at our café, you can sit and enjoy table service with the purchase of bakery goodies and coffee shop drinks. We welcome all to join us!
           </p>
 

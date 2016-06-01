@@ -57,6 +57,23 @@ a:active {
 }
 
 
+
+#button-pastries,
+#button-cakesPies {
+  display: none; // don't show until an image is clicked
+  text-align: center;
+  margin-top: 25px;
+
+  button {
+    background-color: #660000;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+
 /* ---------- NAVIGATION ---------- */
 nav {
   position: fixed;
@@ -123,15 +140,15 @@ h1 {
   }
 
   @media (min-width: 832px) {
-    height: 500px;
+    height: 550px;
   }
 }
 
 #sub-cakesPies {
-  height: 650px;
+  height: 680px;
 
   @media (min-width: 560px) {
-    height: 500px;
+    height: 550px;
   }
 }
 
@@ -149,7 +166,7 @@ h1 {
 
 
 /* ---------- BAKERY PAGE IMAGES ---------- */
-.images-bakery {
+.content-bakery {
   margin-top: 50px;
 }
 
@@ -199,7 +216,7 @@ h1 {
   }
 }
 
-.images-pastries {
+.content-pastries {
   text-align: center;
   margin-top: 50px;
 }
@@ -226,7 +243,7 @@ h1 {
   }
 }
 
-.images-cakesPies {
+.content-cakesPies {
   text-align: center;
   margin-top: 50px;
 }
@@ -257,11 +274,11 @@ h1 {
   }
 }
 
-#bakery,
-#pastries,
-#cakesPies,
-#cookies,
-#cafe { // info text
+#text-bakery,
+#text-pastries,
+#text-cakesPies,
+#text-cookies,
+#text-cafe { // info text
   display: inline-block;
   width: 250px;
   text-align: justify;
@@ -299,10 +316,12 @@ h1 {
   display: none; // don't show until link is clicked
   font-weight: 400;
   list-style-type: none;
-  float: right;
-  text-align: right;
-  margin-right: 30px;
-  margin-top: 50px;
+
+}
+
+.flavors {
+  //display: none;
+  display: inline-block;
 }
 
 .hover-text {

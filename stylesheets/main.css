@@ -38,6 +38,19 @@ a:hover {
 a:active {
   color: #ffffff; }
 
+#button-pastries,
+#button-cakesPies {
+  display: none;
+  text-align: center;
+  margin-top: 25px; }
+  #button-pastries button,
+  #button-cakesPies button {
+    background-color: #660000;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px; }
+
 /* ---------- NAVIGATION ---------- */
 nav {
   position: fixed;
@@ -89,13 +102,13 @@ h1 {
       height: 700px; } }
   @media (min-width: 832px) {
     #sub-pastries {
-      height: 500px; } }
+      height: 550px; } }
 
 #sub-cakesPies {
-  height: 650px; }
+  height: 680px; }
   @media (min-width: 560px) {
     #sub-cakesPies {
-      height: 500px; } }
+      height: 550px; } }
 
 #sub-cookies {
   height: 500px; }
@@ -107,7 +120,7 @@ h1 {
   height: 500px; }
 
 /* ---------- BAKERY PAGE IMAGES ---------- */
-.images-bakery {
+.content-bakery {
   margin-top: 50px; }
 
 #img-pastries {
@@ -153,7 +166,7 @@ h1 {
       display: inline-block;
       margin: 0px 15px 15px 15px; } }
 
-.images-pastries {
+.content-pastries {
   text-align: center;
   margin-top: 50px; }
 
@@ -176,7 +189,7 @@ h1 {
       display: inline-block;
       margin: 0px 15px 15px 15px; } }
 
-.images-cakesPies {
+.content-cakesPies {
   text-align: center;
   margin-top: 50px; }
 
@@ -201,22 +214,22 @@ h1 {
     .curly-left {
       font-size: 6em; } }
 
-#bakery,
-#pastries,
-#cakesPies,
-#cookies,
-#cafe {
+#text-bakery,
+#text-pastries,
+#text-cakesPies,
+#text-cookies,
+#text-cafe {
   display: inline-block;
   width: 250px;
   text-align: justify;
   line-height: 100%;
   font-weight: 200; }
   @media (min-width: 420px) {
-    #bakery,
-    #pastries,
-    #cakesPies,
-    #cookies,
-    #cafe {
+    #text-bakery,
+    #text-pastries,
+    #text-cakesPies,
+    #text-cookies,
+    #text-cafe {
       width: 300px; } }
 
 .curly-right {
@@ -240,11 +253,10 @@ h1 {
 #flavors-whoopie {
   display: none;
   font-weight: 400;
-  list-style-type: none;
-  float: right;
-  text-align: right;
-  margin-right: 30px;
-  margin-top: 50px; }
+  list-style-type: none; }
+
+.flavors {
+  display: inline-block; }
 
 .hover-text {
   opacity: 0;
