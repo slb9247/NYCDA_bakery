@@ -14,12 +14,29 @@
     <body>
 
       <nav>
-        <ul>
-          <li><a href="#page-home">Home</a></li>
-          <li><a href="#page-bakery">Bakery</a></li>
-          <li><a href="#page-cafe">Café</a></li>
-          <li><a href="#page-contact">Contact</a></li>
-        </ul>
+        <a href="#page-home">
+          <img src="images/holy_cannoli_logo.png">
+        </a>
+
+          <ul class="menu-main">
+            <li><a href="#page-home">Home</a></li>
+            <li><a href="#page-bakery">Bakery</a></li>
+            <li><a href="#page-cafe">Café</a></li>
+            <li><a href="#page-contact">Contact</a></li>
+          </ul>
+
+          <a href="#menu" id="hamburger">
+            &#9776;
+          </a>
+
+          <div class="menu-drop">
+            <ul>
+              <a href="#page-home"><li>Home</li></a>
+              <a href="#page-bakery"><li>Bakery</li></a>
+              <a href="#page-cafe"><li>Café</li></a>
+              <a href="#page-contact"><li>Contact</li></a>
+            </ul>
+          </div>
       </nav>
 
 
@@ -48,19 +65,22 @@
 
         <div class="content-bakery">
           <a href="#sub-pastries">
-            <div id="img-pastries">
-              <!-- BACKGROUND IMAGE -->
-            </div>
+              <div id="img-pastries">
+                <h2 id="hover-mainPastries">Pastries</h2>
+                <!-- BACKGROUND IMAGE -->
+              </div>
           </a>
 
           <a href="#sub-cakesPies">
             <div id="img-bigCake">
+              <h2 id="hover-mainCakes">Cakes &amp; Pies</h2>
               <!-- BACKGROUND IMAGE -->
             </div>
           </a>
 
           <a href="#sub-cookies">
             <div id="img-cookies">
+              <h2 id="hover-mainCookies">Cookies</h2>
               <!-- BACKGROUND IMAGE -->
             </div>
           </a>
@@ -87,7 +107,7 @@
 
         <div class="content-pastries">
           <div id="img-cannoli" class="image-pastry">
-            <p class="hover-text" id="hover-cannoli">Cannoli</p>
+            <p class="hover-pastries" id="hover-cannoli">Cannoli</p>
             <img src="images/cannoli.jpg" width="175" height="175">
           </div>
 
@@ -105,7 +125,7 @@
           </div>
 
           <div id="img-puff" class="image-pastry">
-            <p class="hover-text" id="hover-puff">Cream Puffs</p>
+            <p class="hover-pastries" id="hover-puff">Cream Puffs</p>
             <img src="images/cream_puff.jpg" width="175" height="175">
           </div>
 
@@ -120,7 +140,7 @@
           </div>
 
           <div id="img-eclair" class="image-pastry">
-            <p class="hover-text" id="hover-eclair">Eclairs</p>
+            <p class="hover-pastries" id="hover-eclair">Eclairs</p>
             <img src="images/eclair.jpg" width="175" height="175">
           </div>
 
@@ -137,7 +157,7 @@
           </div>
 
           <div id="img-whoopie" class="image-pastry">
-            <p class="hover-text" id="hover-whoopie">Whoopie Pies</p>
+            <p class="hover-pastries" id="hover-whoopie">Whoopie Pies</p>
             <img src="images/whoopie_pie.jpg" width="175" height="175">
           </div>
 
@@ -180,7 +200,7 @@
 
         <div class="content-cakesPies">
           <div id="img-cake" class="image-cakePie">
-            <p class="hover-text" id="hover-cake">Cakes</p>
+            <p class="hover-cakesPies" id="hover-cake">Cakes</p>
             <img src="images/cake.jpg" width="175" height="175">
           </div>
 
@@ -197,7 +217,7 @@
           </div>
 
           <div id="img-pie" class="image-cakePie">
-            <p class="hover-text" id="hover-pie">Pies</p>
+            <p class="hover-cakesPies" id="hover-pie">Pies</p>
             <img src="images/pie.jpg" width="175" height="175">
           </div>
 
@@ -300,7 +320,7 @@
               <br>
               <span>*</span>Phone Number:
               <br>
-                <input type="number" name="number" maxlength="10">
+                <input type="tel" name="phone">
               <br>
 
               <br>
@@ -325,7 +345,7 @@
               <br>
               Message:
               <br>
-                <textarea name="message" rows="10" cols="50" placeholder="Please leave a message."></textarea>
+                <textarea name="message" rows="10" cols="30" placeholder="Please leave a message."></textarea>
               <br>
 
               <input type="submit" value="Submit">

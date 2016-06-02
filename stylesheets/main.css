@@ -29,17 +29,30 @@
   background-color: #ffcccc; }
 
 /* ---------- LINKS ---------- */
-a:link {
+nav a:link {
   color: #660000;
   text-decoration: none; }
 
-a:visited {
+nav a:visited {
   color: #660000; }
 
-a:hover {
+nav a:hover {
   color: #ffffff; }
 
-a:active {
+nav a:active {
+  color: #ffffff; }
+
+.content-bakery a:link {
+  color: #000000;
+  text-decoration: none; }
+
+.content-bakery a:visited {
+  color: #000000; }
+
+.content-bakery a:hover {
+  color: #ffffff; }
+
+.content-bakery a:active {
   color: #ffffff; }
 
 .button-back {
@@ -65,21 +78,51 @@ nav {
   height: 100px;
   box-shadow: 2px 6px 15px #333333;
   z-index: 1000; }
-  nav ul {
-    text-align: center; }
-    @media (min-width: 480px) {
-      nav ul {
-        text-align: right;
-        padding-right: 20px; } }
-  nav li {
-    list-style-type: none;
-    margin-top: 50px;
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-    font-size: 1.2em; }
-    @media (min-width: 480px) {
-      nav li {
-        font-size: 1.5em; } }
+  nav img {
+    width: 210px;
+    height: 110px; }
+
+.menu-main {
+  display: none; }
+  @media (min-width: 600px) {
+    .menu-main {
+      display: inline-block;
+      float: right;
+      padding-right: 20px; } }
+
+.menu-main li {
+  list-style-type: none;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  font-size: 1.2em; }
+  @media (min-width: 600px) {
+    .menu-main li {
+      font-size: 1.5em; } }
+
+#hamburger {
+  font-size: 2.5em;
+  float: right;
+  padding-right: 20px;
+  margin-top: 30px; }
+  @media (min-width: 600px) {
+    #hamburger {
+      display: none; } }
+
+.menu-drop {
+  display: none;
+  z-index: 900;
+  font-size: 1.2em;
+  background: #cc9966;
+  text-align: center; }
+  .menu-drop li {
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #1d1f20; }
+  .menu-drop ul li:hover {
+    background: #e8d6dd; }
+  .menu-drop ul a {
+    margin: 0px;
+    color: #660000; }
 
 /* ---------- HEADINGS ---------- */
 h1 {
@@ -128,31 +171,28 @@ h1 {
   margin-top: 50px; }
 
 #img-pastries {
-  background: url("../images/pastries.jpg");
+  background: url("../images/pastries.png");
   width: 100%;
   height: 150px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
-  opacity: 0.5; }
+  margin-bottom: 30px; }
 
 #img-bigCake {
-  background: url("../images/bigCake.jpg");
+  background: url("../images/bigCake.png");
   width: 100%;
   height: 150px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
-  opacity: 0.5; }
+  margin-bottom: 30px; }
 
 #img-cookies {
-  background: url("../images/cookies.jpg");
+  background: url("../images/cookies.png");
   width: 100%;
   height: 150px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
-  opacity: 0.5; }
+  margin-bottom: 30px; }
 
 /* ---------- PASTRY PAGE IMAGES ---------- */
 #img-cannoli,
@@ -244,6 +284,13 @@ h1 {
       font-size: 6em; } }
 
 /* ---------- BAKERY PAGE CONTENT ---------- */
+#hover-mainPastries,
+#hover-mainCakes,
+#hover-mainCookies {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center; }
+
 /* ---------- PASTRY/CAKE PAGE CONTENT ---------- */
 #flavors-cannoli,
 #flavors-puff,
@@ -264,7 +311,8 @@ h1 {
 .flavors {
   display: inline-block; }
 
-.hover-text {
+.hover-pastries,
+.hover-cakesPies {
   opacity: 0;
   font-size: 1.5em;
   font-weight: 400;

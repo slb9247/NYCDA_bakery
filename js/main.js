@@ -25,12 +25,26 @@ $(document).on('ready', function() {
 
 
 
+// hamburger menu
+  $('#hamburger').on('click', function() {
+    $('.menu-drop').slideToggle('fast');
+  });
+
+
+
 // show and hide text on hovered and non-hovered images
   $('img').on('mouseenter', function() {
-    $(this).css({cursor: 'pointer'}).siblings('.hover-text').fadeTo(500, 1.0);
+    $(this).css({cursor: 'pointer'}).siblings('.hover-pastries').fadeTo(500, 1.0);
   });
   $('img').on('mouseleave', function() {
-    $(this).siblings('.hover-text').hide();
+    $(this).siblings('.hover-pastries').hide();
+  });
+
+  $('img').on('mouseenter', function() {
+    $(this).css({cursor: 'pointer'}).siblings('.hover-cakesPies').fadeTo(500, 1.0);
+  });
+  $('img').on('mouseleave', function() {
+    $(this).siblings('.hover-cakesPies').hide();
   });
 
 
