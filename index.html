@@ -86,11 +86,12 @@
         </div>
 
         <div class="content-pastries">
-          <div id="img-cannoli" class="image">
+          <div id="img-cannoli" class="image-pastry">
             <p class="hover-text" id="hover-cannoli">Cannoli</p>
             <img src="images/cannoli.jpg" width="175" height="175">
           </div>
 
+          <div class="list-pastries">
             <ul id="flavors-cannoli" class="flavors">
               <li>Plain Ricotta</li>
               <li>Chocolate Ricotta</li>
@@ -101,12 +102,14 @@
               <li>Hazelnut</li>
               <li>Caramel</li>
             </ul>
+          </div>
 
-          <div id="img-puff" class="image">
+          <div id="img-puff" class="image-pastry">
             <p class="hover-text" id="hover-puff">Cream Puffs</p>
             <img src="images/cream_puff.jpg" width="175" height="175">
           </div>
 
+          <div class="list-pastries">
             <ul id="flavors-puff" class="flavors">
               <li>Vanilla</li>
               <li>Chocolate</li>
@@ -114,12 +117,14 @@
               <li>Pumpkin</li>
               <li>Strawberry</li>
             </ul>
+          </div>
 
-          <div id="img-eclair" class="image">
+          <div id="img-eclair" class="image-pastry">
             <p class="hover-text" id="hover-eclair">Eclairs</p>
             <img src="images/eclair.jpg" width="175" height="175">
           </div>
 
+          <div class="list-pastries">
             <ul id="flavors-eclair" class="flavors">
               <li>Vanilla</li>
               <li>Chocolate</li>
@@ -129,12 +134,14 @@
               <li>Cappuccino</li>
               <li>Strawberry Cheesecake</li>
             </ul>
+          </div>
 
-          <div id="img-whoopie" class="image">
+          <div id="img-whoopie" class="image-pastry">
             <p class="hover-text" id="hover-whoopie">Whoopie Pies</p>
             <img src="images/whoopie_pie.jpg" width="175" height="175">
           </div>
 
+          <div class="list-pastries">
             <ul id="flavors-whoopie" class="flavors">
               <li>Vanilla</li>
               <li>Chocolate</li>
@@ -144,6 +151,7 @@
               <li>Red Velvet</li>
               <li>Blueberry</li>
             </ul>
+          </div>
         </div> <!-- end content-pastries -->
 
 
@@ -171,33 +179,37 @@
         </div>
 
         <div class="content-cakesPies">
-          <div id="img-cake" class="image">
+          <div id="img-cake" class="image-cakePie">
             <p class="hover-text" id="hover-cake">Cakes</p>
             <img src="images/cake.jpg" width="175" height="175">
           </div>
 
-          <ul id="flavors-cakes" class="flavors">
-            <li>White</li>
-            <li>Chocolate</li>
-            <li>Chocolate Mousse</li>
-            <li>Vanilla Mousse</li>
-            <li>Strawberry Mousse</li>
-            <li>Boston Creme</li>
-            <li>Red Velvet</li>
-          </ul>
+          <div class="list-cakesPies">
+            <ul id="flavors-cakes" class="flavors">
+              <li>White</li>
+              <li>Chocolate</li>
+              <li>Chocolate Mousse</li>
+              <li>Vanilla Mousse</li>
+              <li>Strawberry Mousse</li>
+              <li>Boston Creme</li>
+              <li>Red Velvet</li>
+            </ul>
+          </div>
 
-          <div id="img-pie" class="image">
+          <div id="img-pie" class="image-cakePie">
             <p class="hover-text" id="hover-pie">Pies</p>
             <img src="images/pie.jpg" width="175" height="175">
           </div>
 
-          <ul id="flavors-pies" class="flavors">
-            <li>Apple</li>
-            <li>Blueberry</li>
-            <li>Cherry</li>
-            <li>Lemon</li>
-            <li>Custard</li>
-          </ul>
+          <div class="list-cakesPies">
+            <ul id="flavors-pies" class="flavors">
+              <li>Apple</li>
+              <li>Blueberry</li>
+              <li>Cherry</li>
+              <li>Lemon</li>
+              <li>Custard</li>
+            </ul>
+          </div>
         </div> <!-- end content-cakesPies -->
 
 
@@ -259,7 +271,67 @@
 <!-- contact page -->
       <section class="main" id="page-contact">
         <h1>Contact</h1>
-        <!-- FORM -->
+
+        <form action="MAILTO:slb1992@yahoo.com" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+              <br>
+              <select name="prefix">
+                <option value="null"></option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+                <option value="miss">Miss</option>
+              </select>
+              <br>
+
+              <br>
+              <span>*</span>First Name:
+              <br>
+                <input type="text" name="firstName">
+              <br>
+
+              <br>
+              <span>*</span>Last Name:
+              <br>
+                <input type="text" name="lastName">
+              <br>
+
+              <br>
+              <span>*</span>Phone Number:
+              <br>
+                <input type="number" name="number" maxlength="10">
+              <br>
+
+              <br>
+              E-mail:
+              <br>
+                <input type="email" name="email">
+              <br>
+          </fieldset>
+
+              <br>
+
+          <fieldset>
+            <legend>Reason for Contact</legend>
+              <br>
+                <input type="radio" name="reason" value="new"> New Order
+              <br>
+                <input type="radio" name="reason" value="pickup"> Order Pickup
+              <br>
+                <input type="radio" name="reason" value="other"> Other
+              <br>
+
+              <br>
+              Message:
+              <br>
+                <textarea name="message" rows="10" cols="50" placeholder="Please leave a message."></textarea>
+              <br>
+
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+          </fieldset>
+        </form>
       </section>
 
     </body>

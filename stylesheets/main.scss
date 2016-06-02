@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+/* ---------- JQUERY ADDED CLASSES ---------- */
+.hide{
+  display: none !important;
+}
+
 /* ---------- BACKGROUNDS ---------- */
 #page-home {
   background: url('../images/baking.jpg');
@@ -132,12 +137,13 @@ h1 {
 
 #sub-pastries {
   height: 1100px;
+  //height: 100vh;
 
   @media (min-width: 560px) {
     height: 750px;
   }
 
-  @media (min-width: 832px) {
+  @media (min-width: 850px) {
     height: 550px;
   }
 }
@@ -159,7 +165,7 @@ h1 {
 }
 
 #page-contact {
-  height: 500px;
+  height: 800px;
 }
 
 
@@ -298,7 +304,10 @@ h1 {
 }
 
 
-/* ---------- PASTRY PAGE CONTENT ---------- */
+/* ---------- BAKERY PAGE CONTENT ---------- */
+
+
+/* ---------- PASTRY/CAKE PAGE CONTENT ---------- */
 #flavors-cannoli,
 #flavors-puff,
 #flavors-eclair,
@@ -308,6 +317,14 @@ h1 {
   display: none; // don't show until link is clicked
   font-weight: 400;
   list-style-type: none;
+}
+
+.list-pastries {
+  display: none; // don't show until image is clicked
+}
+
+.list-cakesPies {
+  display: none; // don't show until image is clicked
 }
 
 .flavors {
@@ -326,16 +343,26 @@ h1 {
   z-index: 100;
 }
 
-/* ---------- CAKE PAGE CONTENT ---------- */
-
-
-
 
 /* ---------- COOKIE PAGE CONTENT ---------- */
 #flavors-cookies {
   font-weight: 400;
   list-style-type: none;
   text-align: center;
-  margin-left: 30px;
   margin-top: 50px;
+}
+
+
+/* ---------- CONTACT PAGE CONTENT ---------- */
+form {
+  padding: 20px;
+
+  @media (min-width: 560px) {
+    width: 500px;
+  }
+}
+
+fieldset {
+  padding: 20px;
+  margin-left: 20px;
 }
