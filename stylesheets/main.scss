@@ -151,7 +151,7 @@ nav {
   display: none; // don't show until hamburger is clicked
   z-index: 900;
   font-size: 1.2em;
-  background: #cc9966;
+  background: #e8d6dd;
   text-align: center;
 
   li {
@@ -159,14 +159,20 @@ nav {
     border-bottom: 1px solid #1d1f20;
   }
 
+  ul {
+    margin-top: -13px;
+  }
+
   ul li:hover {
-    background: #e8d6dd;
+    background: #cc9966;
+
   }
 
   ul a {
     margin: 0px;
     color: #660000;
   }
+
 }
 
 
@@ -186,47 +192,21 @@ h1 {
 
 
 /* ---------- PAGE HEIGHTS ---------- */
-#page-home {
-  height: 600px;
-}
-
-#page-bakery {
-  height: 850px;
-}
-
-#sub-pastries {
-  height: 1100px;
-  //height: 100vh;
-
-  @media (min-width: 560px) {
-    height: 750px;
-  }
-
-  @media (min-width: 850px) {
-    height: 550px;
-  }
-}
-
-#sub-cakesPies {
-  height: 680px;
-
-  @media (min-width: 560px) {
-    height: 550px;
-  }
-}
-
-#sub-cookies {
-  height: 500px;
-}
-
-#page-cafe {
-  height: 500px;
-}
-
+#page-home,
+#page-bakery,
+#sub-pastries,
+#sub-cakesPies,
+#sub-cookies,
+#page-cafe,
 #page-contact {
-  height: 800px;
+  min-height: calc(100vh - 100px);
 }
 
+#page-bakery,
+#sub-pastries,
+#sub-cakesPies {
+  padding-bottom: 30px;
+}
 
 /* ---------- BAKERY PAGE IMAGES ---------- */
 .content-bakery {
@@ -257,15 +237,13 @@ h1 {
   height: 150px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 30px;
 }
 
 
 /* ---------- PASTRY PAGE IMAGES ---------- */
 #img-cannoli,
 #img-puff,
-#img-eclair,
-#img-whoopie {
+#img-eclair {
   display: block;
   margin-bottom: 30px;
   position: relative;
@@ -273,6 +251,16 @@ h1 {
   @media (min-width: 560px) {
     display: inline-block;
     margin: 0px 15px 30px 15px;
+  }
+}
+
+#img-whoopie {
+  display: block;
+  position: relative;
+
+  @media (min-width: 560px) {
+    display: inline-block;
+    margin: 0px 15px 0px 15px;
   }
 }
 
@@ -291,8 +279,7 @@ h1 {
 
 
 /* ---------- CAKE AND PIE PAGE IMAGES ---------- */
-#img-cake,
-#img-pie {
+#img-cake {
   display: block;
   margin-bottom: 30px;
   position: relative;
@@ -300,6 +287,16 @@ h1 {
   @media (min-width: 560px) {
     display: inline-block;
     margin: 0px 15px 30px 15px;
+  }
+}
+
+#img-pie {
+  display: block;
+  position: relative;
+
+  @media (min-width: 560px) {
+    display: inline-block;
+    margin: 0px 15px 0px 15px;
   }
 }
 
@@ -384,10 +381,12 @@ h1 {
 
 .list-pastries {
   display: none; // don't show until image is clicked
+  vertical-align: top;
 }
 
 .list-cakesPies {
   display: none; // don't show until image is clicked
+  vertical-align: top;
 }
 
 .flavors {
@@ -397,7 +396,7 @@ h1 {
 .hover-pastries,
 .hover-cakesPies {
   opacity: 0; // don't show until image is hovered over
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 400;
   position: absolute;
   left: 0;

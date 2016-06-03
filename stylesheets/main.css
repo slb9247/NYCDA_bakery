@@ -113,13 +113,15 @@ nav {
   display: none;
   z-index: 900;
   font-size: 1.2em;
-  background: #cc9966;
+  background: #e8d6dd;
   text-align: center; }
   .menu-drop li {
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #1d1f20; }
+  .menu-drop ul {
+    margin-top: -13px; }
   .menu-drop ul li:hover {
-    background: #e8d6dd; }
+    background: #cc9966; }
   .menu-drop ul a {
     margin: 0px;
     color: #660000; }
@@ -136,35 +138,19 @@ h1 {
   font-size: 3em; }
 
 /* ---------- PAGE HEIGHTS ---------- */
-#page-home {
-  height: 600px; }
-
-#page-bakery {
-  height: 850px; }
-
-#sub-pastries {
-  height: 1100px; }
-  @media (min-width: 560px) {
-    #sub-pastries {
-      height: 750px; } }
-  @media (min-width: 850px) {
-    #sub-pastries {
-      height: 550px; } }
-
-#sub-cakesPies {
-  height: 680px; }
-  @media (min-width: 560px) {
-    #sub-cakesPies {
-      height: 550px; } }
-
-#sub-cookies {
-  height: 500px; }
-
-#page-cafe {
-  height: 500px; }
-
+#page-home,
+#page-bakery,
+#sub-pastries,
+#sub-cakesPies,
+#sub-cookies,
+#page-cafe,
 #page-contact {
-  height: 800px; }
+  min-height: calc(100vh - 100px); }
+
+#page-bakery,
+#sub-pastries,
+#sub-cakesPies {
+  padding-bottom: 30px; }
 
 /* ---------- BAKERY PAGE IMAGES ---------- */
 .content-bakery {
@@ -191,24 +177,29 @@ h1 {
   width: 100%;
   height: 150px;
   background-size: cover;
-  background-position: center;
-  margin-bottom: 30px; }
+  background-position: center; }
 
 /* ---------- PASTRY PAGE IMAGES ---------- */
 #img-cannoli,
 #img-puff,
-#img-eclair,
-#img-whoopie {
+#img-eclair {
   display: block;
   margin-bottom: 30px;
   position: relative; }
   @media (min-width: 560px) {
     #img-cannoli,
     #img-puff,
-    #img-eclair,
-    #img-whoopie {
+    #img-eclair {
       display: inline-block;
       margin: 0px 15px 30px 15px; } }
+
+#img-whoopie {
+  display: block;
+  position: relative; }
+  @media (min-width: 560px) {
+    #img-whoopie {
+      display: inline-block;
+      margin: 0px 15px 0px 15px; } }
 
 .content-pastries {
   text-align: center;
@@ -222,16 +213,22 @@ h1 {
   opacity: 0.3; }
 
 /* ---------- CAKE AND PIE PAGE IMAGES ---------- */
-#img-cake,
-#img-pie {
+#img-cake {
   display: block;
   margin-bottom: 30px;
   position: relative; }
   @media (min-width: 560px) {
-    #img-cake,
-    #img-pie {
+    #img-cake {
       display: inline-block;
       margin: 0px 15px 30px 15px; } }
+
+#img-pie {
+  display: block;
+  position: relative; }
+  @media (min-width: 560px) {
+    #img-pie {
+      display: inline-block;
+      margin: 0px 15px 0px 15px; } }
 
 .content-cakesPies {
   text-align: center;
@@ -303,10 +300,12 @@ h1 {
   list-style-type: none; }
 
 .list-pastries {
-  display: none; }
+  display: none;
+  vertical-align: top; }
 
 .list-cakesPies {
-  display: none; }
+  display: none;
+  vertical-align: top; }
 
 .flavors {
   display: inline-block; }
@@ -314,7 +313,7 @@ h1 {
 .hover-pastries,
 .hover-cakesPies {
   opacity: 0;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 400;
   position: absolute;
   left: 0;

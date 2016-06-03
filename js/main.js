@@ -30,6 +30,9 @@ $(document).on('ready', function() {
     $('.menu-drop').slideToggle('fast');
   });
 
+  $('.menu-drop ul a').on('click', function() {
+    $('.menu-drop').hide();
+  });
 
 
 // show and hide text on hovered and non-hovered images
