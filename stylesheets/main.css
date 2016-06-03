@@ -138,7 +138,9 @@ h1 {
   font-size: 3em; }
 
 /* ---------- PAGE HEIGHTS ---------- */
-#page-home,
+#page-home {
+  height: 700px; }
+
 #page-bakery,
 #sub-pastries,
 #sub-cakesPies,
